@@ -1,0 +1,2283 @@
+{
+  "comment": "Created in Moho version 11.2.1, Copyright © 1999-2016 Smith Micro Software, Inc.",
+  "rev_version": 0,
+  "onions_colored": true,
+  "layers": [
+    {
+      "origin": {
+        "y": 0,
+        "x": 0
+      },
+      "edit_only": false,
+      "noisy_shapes": false,
+      "flexi_bone_subset": "",
+      "scale_compensation": true,
+      "noise_interval": 1,
+      "layer_outline": {
+        "color": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Color",
+          "val": [
+            {
+              "a": 1,
+              "r": 0,
+              "b": 0,
+              "g": 0
+            }
+          ]
+        },
+        "on": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        },
+        "width": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0.004115
+          ]
+        }
+      },
+      "visible": true,
+      "rotate_to_follow": false,
+      "layer_shadow": {
+        "on": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        },
+        "angle": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            5.497787
+          ]
+        },
+        "noise_scale": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            64
+          ]
+        },
+        "color": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Color",
+          "val": [
+            {
+              "a": 0.501961,
+              "r": 0,
+              "b": 0,
+              "g": 0
+            }
+          ]
+        },
+        "offset": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0.033333
+          ]
+        },
+        "expansion": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "blur": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0.00823
+          ]
+        },
+        "threshold": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        },
+        "noise_amp": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "clip_to_group": false
+      },
+      "extra_lines": 0,
+      "motion_blur": {
+        "on": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        },
+        "skip": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            1
+          ]
+        },
+        "alpha_start": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0.3
+          ]
+        },
+        "alpha_end": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0.1
+          ]
+        },
+        "radius": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0.008333
+          ]
+        },
+        "frames": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            2
+          ]
+        }
+      },
+      "follow_bending": false,
+      "3d_mode": 0,
+      "blend_mode": 0,
+      "noisy_lines": false,
+      "uuid": "da88681c-ea48-404b-b7e7-60f3c1f7c20e",
+      "parent_bone": -1,
+      "label_col": 0,
+      "transforms": {
+        "flip_h": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        },
+        "scale": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Vec3",
+          "val": [
+            {
+              "y": 1,
+              "x": 1,
+              "z": 1
+            }
+          ]
+        },
+        "rotation_y": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "rotation_x": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "rotation_z": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "physics_nudge": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Vec2",
+          "val": [
+            {
+              "y": 0,
+              "x": 0
+            }
+          ]
+        },
+        "following": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "translation": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Vec3",
+          "val": [
+            {
+              "y": 0,
+              "x": 0,
+              "z": 0
+            }
+          ]
+        },
+        "flip_v": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        },
+        "shear": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Vec3",
+          "val": [
+            {
+              "y": 0,
+              "x": 0,
+              "z": 0
+            }
+          ]
+        }
+      },
+      "line_texture_path": "",
+      "layer_effects": {
+        "noise": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "pixelation": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "visibility": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            true
+          ]
+        },
+        "ambient_occlusion": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "blur": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "threshold": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "alpha": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            1
+          ]
+        }
+      },
+      "timeline_markers": {
+        "ref": false,
+        "interp": [
+          {
+            "h": 0,
+            "s": false,
+            "v1": 0.1,
+            "v2": 0.5,
+            "im": 0,
+            "t": 0,
+            "in": 1
+          }
+        ],
+        "when": [
+          -1000000
+        ],
+        "type": "String",
+        "val": [
+          ""
+        ]
+      },
+      "animated_layer_effects": false,
+      "layer_shading": {
+        "on": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        },
+        "angle": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            5.497787
+          ]
+        },
+        "noise_scale": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            64
+          ]
+        },
+        "color": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Color",
+          "val": [
+            {
+              "a": 0.501961,
+              "r": 0,
+              "b": 0,
+              "g": 0
+            }
+          ]
+        },
+        "offset": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0.033333
+          ]
+        },
+        "blur": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0.016461
+          ]
+        },
+        "threshold": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        },
+        "noise_amp": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        },
+        "contraction": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        }
+      },
+      "masking": 0,
+      "3d_options": {
+        "3d_shading_color": {
+          "a": 255,
+          "r": 64,
+          "b": 64,
+          "g": 64
+        },
+        "3d_crease_edges": true,
+        "3d_shading_density": 50,
+        "3d_reset_z": false,
+        "3d_crease_angle": 1.047198,
+        "3d_silhouette_edges": true,
+        "3d_shading_mode": 1,
+        "3d_backface_removal": false,
+        "3d_material_edges": true,
+        "3d_edge_extension": 0,
+        "type": "Mesh3DOptions"
+      },
+      "animated_noise": false,
+      "type": "MeshLayer",
+      "layer_ref_mod_date": 0,
+      "timing_offset": 0,
+      "face_camera_mode": 2,
+      "noise_amp": 0.008333,
+      "follow_layer_uuid": "",
+      "exclude_lines_from_mask": false,
+      "fill_texture_path": "",
+      "layer_ref_same_doc": false,
+      "face_camera": false,
+      "random_num": 5936,
+      "mesh": {
+        "type": "Mesh",
+        "next_shape_id": 8,
+        "curves": [
+          {
+            "num_points": 3,
+            "profile_repeat": 16,
+            "end_percent": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                1.1
+              ]
+            },
+            "points": [
+              {
+                "segments_on": true,
+                "smoothness": {
+                  "ref": false,
+                  "interp": [
+                    {
+                      "h": 0,
+                      "s": false,
+                      "v1": 0.1,
+                      "v2": 0.5,
+                      "im": 0,
+                      "t": 0,
+                      "in": 1
+                    }
+                  ],
+                  "when": [
+                    0
+                  ],
+                  "type": "Val",
+                  "val": [
+                    0.001
+                  ]
+                },
+                "point": 0
+              },
+              {
+                "segments_on": true,
+                "smoothness": {
+                  "ref": false,
+                  "interp": [
+                    {
+                      "h": 0,
+                      "s": false,
+                      "v1": 0.1,
+                      "v2": 0.5,
+                      "im": 0,
+                      "t": 0,
+                      "in": 1
+                    }
+                  ],
+                  "when": [
+                    0
+                  ],
+                  "type": "Val",
+                  "val": [
+                    0.001
+                  ]
+                },
+                "point": 1
+              },
+              {
+                "segments_on": true,
+                "smoothness": {
+                  "ref": false,
+                  "interp": [
+                    {
+                      "h": 0,
+                      "s": false,
+                      "v1": 0.1,
+                      "v2": 0.5,
+                      "im": 0,
+                      "t": 0,
+                      "in": 1
+                    }
+                  ],
+                  "when": [
+                    0
+                  ],
+                  "type": "Val",
+                  "val": [
+                    0.001
+                  ]
+                },
+                "point": 2
+              }
+            ],
+            "closed": true,
+            "profile_layer_uuid": "",
+            "type": "Curve",
+            "profile_curve_id": -1,
+            "start_percent": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                -0.1
+              ]
+            }
+          }
+        ],
+        "shapes": [
+          {
+            "has_fill": true,
+            "style": {
+              "line_color": {
+                "ref": false,
+                "interp": [
+                  {
+                    "h": 0,
+                    "s": false,
+                    "v1": 0.1,
+                    "v2": 0.5,
+                    "im": 0,
+                    "t": 0,
+                    "in": 1
+                  }
+                ],
+                "when": [
+                  0
+                ],
+                "type": "Color",
+                "val": [
+                  {
+                    "a": 1,
+                    "r": 0,
+                    "b": 0,
+                    "g": 0
+                  }
+                ]
+              },
+              "line_width": 0.005556,
+              "brush_randomize": true,
+              "fill_color": {
+                "ref": false,
+                "interp": [
+                  {
+                    "h": 0,
+                    "s": false,
+                    "v1": 0.1,
+                    "v2": 0.5,
+                    "im": 0,
+                    "t": 0,
+                    "in": 1
+                  }
+                ],
+                "when": [
+                  0
+                ],
+                "type": "Color",
+                "val": [
+                  {
+                    "a": 1,
+                    "r": 1,
+                    "b": 1,
+                    "g": 1
+                  }
+                ]
+              },
+              "brush_tint": true,
+              "line_caps": 1,
+              "define_fill_color": false,
+              "uuid": "b6a6be62-43fa-4d09-9978-526e26feed2c",
+              "define_line_col": false,
+              "brush_spacing": 0.25,
+              "brush_name": "",
+              "brush_merged_alpha": false,
+              "brush_jitter": 6.283185,
+              "define_line_width": false,
+              "brush_align": false,
+              "brush_angle_drift": 0,
+              "type": "Style",
+              "name": ""
+            },
+            "name": "",
+            "effect_rotation": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                0
+              ]
+            },
+            "inherited_style_uuid": "10225716-e0f3-4f6d-bdf7-05c5fe3968f3",
+            "selected": false,
+            "effect_scale": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                1
+              ]
+            },
+            "3d_thickness": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                0.125
+              ]
+            },
+            "effect_offset": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Vec2",
+              "val": [
+                {
+                  "y": 0,
+                  "x": 0
+                }
+              ]
+            },
+            "edges": {
+              "segment": [
+                0,
+                1,
+                2
+              ],
+              "flag": [
+                0,
+                0,
+                0
+              ],
+              "curve": [
+                0,
+                0,
+                0
+              ]
+            },
+            "has_outline": true,
+            "type": "Shape",
+            "id": 7,
+            "fill_allowed": true,
+            "inherited_style2_name": ""
+          }
+        ],
+        "points": [
+          {
+            "colored": false,
+            "parent": -2,
+            "color": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Color",
+              "val": [
+                {
+                  "a": 1,
+                  "r": 1,
+                  "b": 1,
+                  "g": 1
+                }
+              ]
+            },
+            "selected": true,
+            "color_strength": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                1
+              ]
+            },
+            "curves": [
+              {
+                "curve": 0,
+                "curve_points": 0
+              }
+            ],
+            "width": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                1
+              ]
+            },
+            "position": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Vec2",
+              "val": [
+                {
+                  "y": 0.267415,
+                  "x": 0.10832
+                }
+              ]
+            },
+            "type": "Point"
+          },
+          {
+            "colored": false,
+            "parent": -2,
+            "color": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Color",
+              "val": [
+                {
+                  "a": 1,
+                  "r": 1,
+                  "b": 1,
+                  "g": 1
+                }
+              ]
+            },
+            "selected": true,
+            "color_strength": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                1
+              ]
+            },
+            "curves": [
+              {
+                "curve": 0,
+                "curve_points": 1
+              }
+            ],
+            "width": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                1
+              ]
+            },
+            "position": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Vec2",
+              "val": [
+                {
+                  "y": -0.42651,
+                  "x": 0.360502
+                }
+              ]
+            },
+            "type": "Point"
+          },
+          {
+            "colored": false,
+            "parent": -2,
+            "color": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Color",
+              "val": [
+                {
+                  "a": 1,
+                  "r": 1,
+                  "b": 1,
+                  "g": 1
+                }
+              ]
+            },
+            "selected": true,
+            "color_strength": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                1
+              ]
+            },
+            "curves": [
+              {
+                "curve": 0,
+                "curve_points": 2
+              }
+            ],
+            "width": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Val",
+              "val": [
+                1
+              ]
+            },
+            "position": {
+              "ref": false,
+              "interp": [
+                {
+                  "h": 0,
+                  "s": false,
+                  "v1": 0.1,
+                  "v2": 0.5,
+                  "im": 0,
+                  "t": 0,
+                  "in": 1
+                }
+              ],
+              "when": [
+                0
+              ],
+              "type": "Vec2",
+              "val": [
+                {
+                  "y": -0.42651,
+                  "x": -0.143862
+                }
+              ]
+            },
+            "type": "Point"
+          }
+        ],
+        "groups": [],
+        "shape_order": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "String",
+          "val": [
+            "3"
+          ]
+        },
+        "curve_interpretation": 1,
+        "anim_shape_order": false
+      },
+      "dof_immune": false,
+      "quality_flags": 4092,
+      "scale_normalization": 1,
+      "camera_immune": false,
+      "gap_filling": false,
+      "flexi_bone_elbow": false,
+      "layer_ref_path": "",
+      "name": "Layer 1",
+      "noise_scale": 0.066667,
+      "extra_sketchy": false,
+      "antialiasing": true,
+      "follow_curve": -1,
+      "layer_color": {
+        "color": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Color",
+          "val": [
+            {
+              "a": 0.501961,
+              "r": 0.388235,
+              "b": 0.87451,
+              "g": 0.709804
+            }
+          ]
+        },
+        "on": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        }
+      },
+      "mask_expansion": false,
+      "perspective_shadow": {
+        "on": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        },
+        "scale": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            1
+          ]
+        },
+        "color": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Color",
+          "val": [
+            {
+              "a": 0.501961,
+              "r": 0,
+              "b": 0,
+              "g": 0
+            }
+          ]
+        },
+        "blur": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0.012346
+          ]
+        },
+        "threshold": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Bool",
+          "val": [
+            false
+          ]
+        },
+        "shear": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            0
+          ]
+        }
+      },
+      "physics": {
+        "force_field_vector": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Vec2",
+          "val": [
+            {
+              "y": 1,
+              "x": 0
+            }
+          ]
+        },
+        "force_field": false,
+        "motor_torque": 10000,
+        "density": 1,
+        "respawn": 0,
+        "enabled": true,
+        "friction": 0.3,
+        "sleeping": false,
+        "static": false,
+        "pivot": false,
+        "velocity": {
+          "y": 0,
+          "x": 0
+        },
+        "enable_motor": false,
+        "motor_speed": {
+          "ref": false,
+          "interp": [
+            {
+              "h": 0,
+              "s": false,
+              "v1": 0.1,
+              "v2": 0.5,
+              "im": 0,
+              "t": 0,
+              "in": 1
+            }
+          ],
+          "when": [
+            0
+          ],
+          "type": "Val",
+          "val": [
+            3.141593
+          ]
+        },
+        "restitution": 0.5
+      },
+      "render_only": false,
+      "layer_ref_uuid": ""
+    }
+  ],
+  "onions_sellayer": true,
+  "onions_filled": true,
+  "onions_frame6": -100000,
+  "onions_frame5": -100000,
+  "onions_frame4": -100000,
+  "onions_frame7": -100000,
+  "version": 1021,
+  "onions_frame1": -100000,
+  "onions_frame0": -100000,
+  "onions_frame3": -100000,
+  "onions_frame2": -100000,
+  "thumbnail": "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ACNVH4kAmn/8g21/64p/IVZqtp//ACDbX/rin8hVmiXxMAoooqQCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKr3/8AyDrn/ri/8jViq9//AMg65/64v/I1UfiQCaf/AMg21/64p/IVZqtp/wDyDbX/AK4p/IVZol8TAKKKKkAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACq9/wD8g65/64v/ACNWKr3/APyDrn/ri/8AI1UfiQCaf/yDbX/rin8hVmq2n/8AINtf+uKfyFWaJfEwCiiipAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqvf/wDIOuf+uL/yNWKr3/8AyDrn/ri/8jVR+JAJp/8AyDbX/rin8hVmq2n/APINtf8Arin8hVmiXxMAoooqQCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKr3/APyDrn/ri/8AI1Yqvf8A/IOuf+uL/wAjVR+JAJp//INtf+uKfyFWaraf/wAg21/64p/IVZol8TAKKKKkAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiisjxOzNoktpEqvNekW0altvLHBPQ9F3NwOimpnJRi5PoOKTaT2NeisrwzI7eH7WGZBHNar9mlQNnDR/Ln6HAI9iK1acWpJNA7X0CiiimIKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKr3/8AyDrn/ri/8jViq9//AMg65/64v/I1UfiQCaf/AMg21/64p/IVZqtp/wDyDbX/AK4p/IVZol8TAKKKKkAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsedvtuvhODFp8YbjvM4IxnsVTtzkSg4GBnVkkjhieWV1jjRSzOxwFA6knsKw/D8My6c11dRtFc30r3UqNIzlNx+VfmAI2oEXGABtrw8+xPscG4p6y0+XX8NPmaU43kSWJNj4guLbYBDfp9oRgMASKFVweeSRtPQdD15rbrn9eUw2keqRwGafTpBOqrwxTpIB9ULcdyBW+CGAIIIPQiqyPE+3wcU946f5fh+QqkbSFooor2iAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqvf/8AIOuf+uL/AMjViq9//wAg65/64v8AyNVH4kAmn/8AINtf+uKfyFWaraf/AMg21/64p/IVZol8TAKKKKkAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKZIHK4jIUnuewp9FAGJrD3E2nW+njbI1/Isch3FT5OMyHgf3QV7csOQcVf6VlWe68124umQiK0gS1hbzCQzEB5Djp/cXPXKkVplwrhTkbuh7Z9K+B4gxDrYr2UdoL8d3/XkdVKOjYskaSxtHIiujgqysMgg9QRUHh4mLTfsDABrBzbAY/gX/V/UmMoTjuT06CxVAyNZeJbZxEzR6jEbd3G3CPGGdO4OCDL2PIXpzk4dxPssS6T2mvxWq/UVaN1c26KKK++OYKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKr3/wDyDrn/AK4v/I1Yqvf/APIOuf8Ari/8jVR+JAJp/wDyDbX/AK4p/IVZqtp//INtf+uKfyFWaJfEwCiiipAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGNFGxy0aknuVFVr+W107T7i9mjjEcEbSNkY6DPpVysXX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",
+  "mime_type": "application/x-vnd.lm_mohodoc",
+  "metadata": {
+    "save_time": 0
+  },
+  "styles": [
+    {
+      "line_color": {
+        "ref": false,
+        "interp": [
+          {
+            "h": 0,
+            "s": false,
+            "v1": 0.1,
+            "v2": 0.5,
+            "im": 0,
+            "t": 0,
+            "in": 1
+          }
+        ],
+        "when": [
+          0
+        ],
+        "type": "Color",
+        "val": [
+          {
+            "a": 1,
+            "r": 0,
+            "b": 0,
+            "g": 0
+          }
+        ]
+      },
+      "line_width": 0.005556,
+      "brush_randomize": true,
+      "fill_color": {
+        "ref": false,
+        "interp": [
+          {
+            "h": 0,
+            "s": false,
+            "v1": 0.1,
+            "v2": 0.5,
+            "im": 0,
+            "t": 0,
+            "in": 1
+          }
+        ],
+        "when": [
+          0
+        ],
+        "type": "Color",
+        "val": [
+          {
+            "a": 1,
+            "r": 1,
+            "b": 0,
+            "g": 1
+          }
+        ]
+      },
+      "brush_tint": true,
+      "line_caps": 1,
+      "define_fill_color": true,
+      "uuid": "10225716-e0f3-4f6d-bdf7-05c5fe3968f3",
+      "define_line_col": true,
+      "brush_spacing": 0.25,
+      "brush_name": "",
+      "brush_merged_alpha": false,
+      "brush_jitter": 6.283185,
+      "define_line_width": true,
+      "brush_align": false,
+      "brush_angle_drift": 0,
+      "type": "Style",
+      "name": "Style 1"
+    }
+  ],
+  "animated_values": {
+    "camera_track": {
+      "ref": false,
+      "interp": [
+        {
+          "h": 0,
+          "s": false,
+          "v1": 0.1,
+          "v2": 0.5,
+          "im": 0,
+          "t": 0,
+          "in": 1
+        }
+      ],
+      "when": [
+        0
+      ],
+      "type": "Vec3",
+      "val": [
+        {
+          "y": 0,
+          "x": 0,
+          "z": 3.732051
+        }
+      ]
+    },
+    "camera_zoom": {
+      "ref": false,
+      "interp": [
+        {
+          "h": 0,
+          "s": false,
+          "v1": 0.1,
+          "v2": 0.5,
+          "im": 0,
+          "t": 0,
+          "in": 1
+        }
+      ],
+      "when": [
+        0
+      ],
+      "type": "Val",
+      "val": [
+        2
+      ]
+    },
+    "camera_pan_tilt": {
+      "ref": false,
+      "interp": [
+        {
+          "h": 0,
+          "s": false,
+          "v1": 0.1,
+          "v2": 0.5,
+          "im": 0,
+          "t": 0,
+          "in": 1
+        }
+      ],
+      "when": [
+        0
+      ],
+      "type": "Vec2",
+      "val": [
+        {
+          "y": 0,
+          "x": 0
+        }
+      ]
+    },
+    "camera_roll": {
+      "ref": false,
+      "interp": [
+        {
+          "h": 0,
+          "s": false,
+          "v1": 0.1,
+          "v2": 0.5,
+          "im": 0,
+          "t": 0,
+          "in": 1
+        }
+      ],
+      "when": [
+        0
+      ],
+      "type": "Val",
+      "val": [
+        0
+      ]
+    },
+    "timeline_markers": {
+      "ref": false,
+      "interp": [
+        {
+          "h": 0,
+          "s": false,
+          "v1": 0.1,
+          "v2": 0.5,
+          "im": 0,
+          "t": 0,
+          "in": 1
+        }
+      ],
+      "when": [
+        -1000000
+      ],
+      "type": "String",
+      "val": [
+        ""
+      ]
+    }
+  },
+  "onions_relative": true,
+  "onions_enabled": false,
+  "onions_behind": true,
+  "major_version": 1,
+  "documentviewstate": {
+    "DocState_viewOffset2": {
+      "y": 0,
+      "x": 0
+    },
+    "DocState_viewOffset3": {
+      "y": 0,
+      "x": 0
+    },
+    "DocState_viewPortTopWidthPct": 1,
+    "DocState_viewOffset1": {
+      "y": 0,
+      "x": 0
+    },
+    "DocState_gridSnappingOn": true,
+    "DocState_outsideViewRadius2": 0,
+    "DocState_viewOffset0": {
+      "y": 0,
+      "x": 0
+    },
+    "DocState_outsideViewRadius0": 0,
+    "DocState_enableOutsideView0": false,
+    "DocState_enableOutsideView1": true,
+    "DocState_enableOutsideView2": false,
+    "DocState_enableOutsideView3": false,
+    "DocState_outsideViewYaw2": 0,
+    "DocState_gridOn": false,
+    "DocState_gridStyle": 0,
+    "DocState_showOutputOnly": false,
+    "DocState_rotation1": 0,
+    "DocState_zoom1": 0,
+    "DocState_zoom0": 0.802775,
+    "DocState_zoom3": 0,
+    "DocState_zoom2": 0,
+    "DocState_outsideViewYaw3": 0,
+    "DocState_rotation0": 0,
+    "DocState_outsideViewYaw0": 0,
+    "DocState_rotation2": 0,
+    "DocState_showVideoSafeZones": false,
+    "DocState_rotation3": 0,
+    "DocState_outsideViewYaw1": 0,
+    "DocState_outsideViewRadius3": 0,
+    "DocState_outsideViewPitch2": 0,
+    "DocState_outsideViewPitch3": 0,
+    "DocState_outsideViewPitch0": 0,
+    "DocState_outsideViewPitch1": 0,
+    "DocState_outsideViewRadius1": 0,
+    "DocState_outsideViewAttn0": {
+      "y": 0,
+      "x": 0,
+      "z": 0
+    },
+    "DocState_outsideViewAttn1": {
+      "y": 0,
+      "x": 0,
+      "z": 0
+    },
+    "DocState_outsideViewAttn2": {
+      "y": 0,
+      "x": 0,
+      "z": 0
+    },
+    "DocState_outsideViewAttn3": {
+      "y": 0,
+      "x": 0,
+      "z": 0
+    },
+    "DocState_showRuleOfThirds": false,
+    "DocState_viewPortLeftWidthPct": 1,
+    "DocState_playStart": -1,
+    "DocState_playEnd": -1,
+    "DocState_gridSize": 20,
+    "DocState_stereo0": false,
+    "DocState_stereo1": true,
+    "DocState_stereo2": false,
+    "DocState_stereo3": false,
+    "DocState_viewportSetting": 1
+  },
+  "layercomps": [],
+  "project_data": {
+    "depth_of_field": false,
+    "height": 720,
+    "distance_sort": false,
+    "global_render_style_layer_style": 0,
+    "stereo_mode": 0,
+    "focus_range": 1,
+    "focus_distance": 2,
+    "back_color": {
+      "a": 255,
+      "r": 234,
+      "b": 234,
+      "g": 234
+    },
+    "depth_sort": false,
+    "width": 1280,
+    "focus_blur": 0.024691,
+    "fps": 24,
+    "global_render_style_minimize_randomness": true,
+    "noise_grain": 0,
+    "start_frame": 1,
+    "extra_swf_frame": false,
+    "soundtrack": "",
+    "stereo_separation": -1,
+    "antialiasing": true,
+    "global_render_style_line_style": 0,
+    "end_frame": 240,
+    "pixelation": 0,
+    "global_render_style_fill_style": 0,
+    "color_palette": "Basic Colors.png"
+  },
+  "created_date": "Thu May 05 18:06:07 2016"
+}
