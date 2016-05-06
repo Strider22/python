@@ -1,10 +1,5 @@
 #!/usr/bin/env python
-"""anime_util - Manipulate a .anime file
-Commands are list, extract, and update.
-list prints the paths of image and audio layers.
-extract saves the Project.animeproj to a desired location.
-update replaces existing paths with the one supplied.
-anime_util.py -h |command| for help.
+""" Print out the layers for an animeStudio file (.anime)
 """
 import zipfile
 import json
@@ -28,15 +23,6 @@ def printLayerInfo(layer):
     """Print the path of an image or audio layer."""
     print layer['name']
 
-def updateLayerInfo(layer, update):
-    """Replace the path of an image or audio layer."""
-    if layer.has_key('image_path'):
-        path = layer['image_path']
-        layer['image_path'] = path.replace(update[0], update[1])
-    if layer.has_key('audio_path'):
-        path = layer['audio_path']
-        layer['audio_path'] = path.replace(update[0], update[1])
-
 def isContainerLayer(layer):
     """Return True if the layer is a group or switch layer."""
     type = layer['type']
@@ -49,10 +35,7 @@ printing layers otherwise."""
         if isContainerLayer(layer):
             iterateContainerLayer(layer['layers'], update)
         else:
-            if update:
-                updateLayerInfo(layer, update)
-            else:
-                printLayerInfo(layer)
+            printLayerInfo(layer)
 
 def iterateLayers(path, update=None):
     """Iterate the root project layers."""
@@ -62,22 +45,7 @@ def iterateLayers(path, update=None):
         jsonData = json.loads(projectData)
         layers = jsonData['layers']
         iterateContainerLayer(layers, update)
-        if update:
-            writeProject(projectPath, json.dumps(jsonData))
-            iterateContainerLayer(layers)
 
-def extractProjectFile(animeFile, projectFilepath = None):
-    """Iterate Project.animeproj to projectFilePath."""
-    jsonData = extractProject(animeFile)
-    if len(jsonData) > 0:
-        jsonData = json.loads(jsonData)
-        if projectFilepath:
-            output = file(projectFilepath, 'wb')
-        else:
-            output = file('Project.animeproj', 'wb')
-        json.dump(jsonData, output, sort_keys=False, indent=4)
-    else:
-        parser.error("Project.animeproj is empty")
 
 def perform():
     parser = argparse.ArgumentParser(description="Open a .anime file and print and/or update the paths of image and audio layers")
