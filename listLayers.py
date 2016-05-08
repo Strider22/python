@@ -57,6 +57,7 @@ def perform():
     if not path.endswith(".anime"):
         parser.error("%s is not an Anime Studio (.anime) file." % path)
     updateInfo = None
+    print(path)
     iterateLayers(path, update=updateInfo)
 
 if __name__ == '__main__':
