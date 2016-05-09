@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-"""resolveStyles - Resolves duplicate styles in an anime studio file.
+"""renameStylesByOrder - Resolves duplicate styles in an anime studio file.
 createLayerOrderFile.py should have been run first to create the layer order file.
-resolveStyles.py -h |command| for help.
+renameStylesByOrder.py -h |command| for help.
 """
 
 import zipfile
@@ -11,7 +11,8 @@ import os
 import sys
 
 _styleIdToName = {}
-_styleNameToPreferredId = {}
+_styleIdToStyle = {}
+_processed_styles = {}
 _anime_studio_object = None
 
 
@@ -35,20 +36,18 @@ def findLayer(name, groupLayer, layersProcessed):
             layersProcessed[uuid] = True
             return layer
 
-def getReplacementId(uuid):
+def check_style_name(uuid):
     name = _styleIdToName[uuid]
-    if name not in _styleNameToPreferredId:
-        _styleNameToPreferredId[name] = uuid
-        return uuid
-    return _styleNameToPreferredId[name]
-
+    if name not in _processed_styles:
+        _processed_styles[name] = 1
+    else:
+        _styleIdToStyle[uuid]['name'] = name + " " + str(_processed_styles[name])
+        _processed_styles[name] += 1
 
 def processShapes(shapes):
     for shape in shapes:
         uuid = shape['inherited_style_uuid']
-        replacementId = getReplacementId(uuid)
-        if replacementId != uuid:
-            shape['inherited_style_uuid'] = replacementId
+        check_style_name(uuid)
 
 
 def processLayer(layer):
@@ -64,6 +63,7 @@ def buildStyleLists() :
         uuid = style['uuid']
         name = style['name']
         _styleIdToName[uuid] = name
+        _styleIdToStyle[uuid] = style
 
 
 def processNamedLayers(path, file):
@@ -85,7 +85,7 @@ def processNamedLayers(path, file):
 
 
 def perform():
-    parser = argparse.ArgumentParser(description="Resolves duplicate styles in an anime studio file. _Does_ "
+    parser = argparse.ArgumentParser(description="Renames duplicate styles. _Does_ "
                                                  "take layer order into consideration.")
     parser.add_argument('layer_order_file', help="File containing the input file and the preferred layer order. "
                                                  "Created by running createLayerOrderFile.py.")
