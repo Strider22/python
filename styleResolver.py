@@ -1,10 +1,13 @@
 # http://zetcode.com/gui/tkinter/layout/
 # http://www.tkdocs.com/tutorial/grid.html
+# http://tkinter.unpythonic.net/wiki/tkFileDialog
 from Tkinter import Tk, Text, BOTH, END, W, N, E, S
-from tkFileDialog import askopenfilename
+from tkFileDialog import askopenfilename, asksaveasfilename
 from ttk import Frame, Button, Label, Style
 import anime
 
+root = None
+anime_file = None
 
 class Example(Frame):
 
@@ -17,13 +20,23 @@ class Example(Frame):
 
 
     def Load(self):
-        filename = askopenfilename()
-        print(filename)
-        my_list = anime.top_level_layer_names(anime.get_data(filename)['layers'])
+        global anime_file
+        anime_file = askopenfilename(filetypes=[('Anime Studio Files', '.anime')])
+        my_list = anime.top_level_layer_names(anime.get_data(anime_file)['layers'])
+        self.area.delete("1.0", END)
         for x in my_list:
             self.area.insert(END, x + '\n')
 
 
+    def Save(self):
+        layer_names = self.area.get("1.0", END).split('\n')
+        anime.process_named_layers(anime_file, layer_names)
+        output_file = asksaveasfilename(defaultextension='.anime',filetypes=[('Anime Studio Files', '.anime')])
+        anime.write_anime_file(output_file)
+
+
+    def cancel(self):
+        root.destroy()
 
     def initUI(self):
 
@@ -39,60 +52,20 @@ class Example(Frame):
         lbl.grid(sticky=W, pady=4, padx=5)
 
         self.area = Text(self)
-        self.area.grid(column=0, row=1, columnspan=1, rowspan=6,
-                  padx=5, sticky=E+W+S+N)
+        self.area.grid(column=0, row=1, columnspan=1, rowspan=6, padx=5, pady=7, sticky=E+W+S+N)
 
-        abtn = Button(self, text="Up", command = self.move_up)
-        abtn.grid(column=1, row=1)
+        hbtn = Button(self, text="Select Anime File", command=self.Load)
+        hbtn.grid(row=4, column=1, padx=5, sticky='EW')
 
-        cbtn = Button(self, text="Down", command = self.move_down)
-        cbtn.grid(column=1, row=2, pady=4)
+        obtn = Button(self, text="Resolve Layers", command=self.Save)
+        obtn.grid(row=5, column=1, pady=7, padx=5, sticky='WE')
 
-        hbtn = Button(self, text="Load", command = self.Load)
-        hbtn.grid(row=4, column=1, padx=5)
+        cancel_button = Button(self, text="Exit", command=self.cancel)
+        cancel_button.grid(row=6, column=1, padx=5, sticky='WE')
 
-        obtn = Button(self, text="Save")
-        obtn.grid(row=5, column=1)
-
-        cancel_button = Button(self, text="Cancel")
-        cancel_button.grid(row=6, column=1)
-
-
-    # swap this line with the line above it
-    def move_up(self):
-        self.area.config(state='normal')
-        # get text on current and previous lines
-        lineText = self.area.get("insert linestart", "insert lineend")
-        prevLineText = self.area.get("insert linestart -1 line", "insert -1 line lineend")
-
-        # delete the old lines
-        self.area.delete("insert linestart -1 line", "insert -1 line lineend")
-        self.area.delete("insert linestart", "insert lineend")
-
-        # insert lines in swapped order
-        self.area.insert("insert linestart -1 line", lineText)
-        self.area.insert("insert linestart", prevLineText)
-        #text.config(state='disabled')
-
-
-    # swap this line with the line below it
-    def move_down(self):
-        self.area.config(state='normal')
-        # get text on current and next lines
-        lineText = self.area.get("insert linestart", "insert lineend")
-        nextLineText = self.area.get("insert +1 line linestart", "insert +1 line lineend")
-
-        # delete text on current and next lines
-        self.area.delete("insert linestart", "insert lineend")
-        self.area.delete("insert +1 line linestart", "insert +1 line lineend")
-
-        # insert text in swapped order
-        self.area.insert("insert linestart", nextLineText)
-        self.area.insert("insert linestart + 1 line", lineText)
-        #text.config(state='disabled')
 
 def main():
-
+    global root
     root = Tk()
     root.geometry("350x300+300+300")
     app = Example(root)
