@@ -17,10 +17,9 @@ def perform():
     if not path.endswith(".anime"):
         parser.error("%s is not an Anime Studio (.anime) file." % path)
 
-    # listLayersModule.iterateLayers(path)
+    list = anime.top_level_layer_names(anime.get_data(path)['layers'])
+    for x in list: print x,"\n",
 
-    for name in anime.layer_names(anime.get_data(path)['layers']):
-        print("layer name is ", name)
 
 if __name__ == '__main__':
     perform()

@@ -2,7 +2,6 @@
 from Tkinter import Tk, Text, BOTH, W, N, E, S
 from ttk import Frame, Button, Label, Style
 
-
 class Example(Frame):
 
     def __init__(self, parent):
@@ -11,6 +10,8 @@ class Example(Frame):
         self.parent = parent
         self.initUI()
 
+    def Pressed(self):
+        print 'buttons are cool'
 
     def initUI(self):
 
@@ -29,7 +30,7 @@ class Example(Frame):
         area.grid(row=1, column=0, columnspan=2, rowspan=4,
                   padx=5, sticky=E+W+S+N)
 
-        abtn = Button(self, text="Activate")
+        abtn = Button(self, text="Activate", command = self.Pressed)
         abtn.grid(row=1, column=3)
 
         cbtn = Button(self, text="Close")

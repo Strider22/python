@@ -16,15 +16,22 @@ def isContainerLayer(layer):
     type = layer['type']
     return type == "GroupLayer" or type == "SwitchLayer"
 
-def layer_names(groupLayer):
+def top_level_layer_names(groupLayer):
+    layer_names = []
+    for layer in groupLayer:
+        layer_names.append(layer['name'])
+    return layer_names
+
+def all_layer_names(groupLayer):
     """Iterate a group or switch layer descending into sub groups and updating or
 printing layers otherwise."""
     layer_names = []
     for layer in groupLayer:
         if isContainerLayer(layer):
-            return layer_names.extend(layer_names(layer['layers']))
+            layer_names.extend(layer_names(layer['layers']))
         else:
-            return layer_names.append(layer['name'])
+            layer_names.append(layer['name'])
+    return layer_names
 
 
 def get_data(path):
