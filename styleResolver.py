@@ -22,17 +22,19 @@ class Example(Frame):
     def Load(self):
         global anime_file
         anime_file = askopenfilename(filetypes=[('Anime Studio Files', '.anime')])
-        my_list = anime.top_level_layer_names(anime.get_data(anime_file)['layers'])
-        self.area.delete("1.0", END)
-        for x in my_list:
-            self.area.insert(END, x + '\n')
+        if anime_file:
+            my_list = anime.top_level_layer_names(anime.get_data(anime_file)['layers'])
+            self.area.delete("1.0", END)
+            for x in my_list:
+                self.area.insert(END, x + '\n')
 
 
     def Save(self):
         layer_names = self.area.get("1.0", END).split('\n')
         anime.process_named_layers(anime_file, layer_names)
         output_file = asksaveasfilename(defaultextension='.anime',filetypes=[('Anime Studio Files', '.anime')])
-        anime.write_anime_file(output_file)
+        if output_file:
+            anime.write_anime_file(output_file)
 
 
     def cancel(self):

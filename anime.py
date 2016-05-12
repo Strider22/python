@@ -22,7 +22,7 @@ def writeProject(animeFile, projectData):
     zf.writestr('Project.animeproj', projectData)
 
 def write_anime_file(animeFile):
-    writeProject(animeFile, _anime_studio_object)
+    writeProject(animeFile, json.dumps(_anime_studio_object))
 
 def isContainerLayer(layer):
     """Return True if the layer is a group or switch layer."""
@@ -108,4 +108,6 @@ def process_named_layers(path, named_layers):
             layer = findLayer(layerName,layers, layersProcessed)
             if layer is not None:
                 processLayer(layer)
+            elif layerName:
+                print "Layer, ", layerName, ", could not be found."
 
